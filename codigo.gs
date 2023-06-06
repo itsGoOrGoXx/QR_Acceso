@@ -2,7 +2,7 @@
 // timezone ids: https://gist.github.com/mhawksey/8673e904a03a91750c26c2754fe0977a
 
 function doGet(e){
-  var tpl = HtmlService.createTemplateFromFile("page.html");
+  var tpl = HtmlService.createTemplateFromFile("index.html");
   tpl.data = e.parameters;
   tpl.data.id = SpreadsheetApp.getActiveSpreadsheet().getId();
   return tpl.evaluate();
